@@ -23,6 +23,7 @@ html, body{
     padding: 0;
     color: #555;
     background-color: $pink-light;
+    font-family: Arial, Verdana;
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
 
@@ -198,6 +199,7 @@ html, body{
             h1{
                 font-size: 2em;
                 margin: 80px 0;
+                @extend .font;
             }
             .social-media{
                 &, li{
@@ -207,7 +209,7 @@ html, body{
                 }
                 li{
                     display: inline-block;
-                    margin: 10px;
+                    margin: 10px 50px;
                     a{
                         &:hover{
                             opacity: .7;
@@ -224,7 +226,7 @@ html, body{
 
 body.active{
     #loading{
-        opacity: 0;
+        visibility: hidden;
         @include transition(all 1s ease);
     }
     #logo{
@@ -240,11 +242,15 @@ body.active{
             width: 605px;
         }
         #slogan{
-            @include logo-icon-effect($limit:5, $delay:3.5s, $effect:true, $speed:.4s);
+            @include logo-icon-effect($limit:5, $delay:3.5s, $effect:true, $speed:0s);
         }
     }
 }
 
 .fade.active{
     opacity: 1;
+}
+
+.container{
+    width: 750px;
 }

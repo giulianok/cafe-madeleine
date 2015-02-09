@@ -21,7 +21,7 @@ $(function () {
 
                             $('body').addClass('active');
 
-                            var delay = 5000;
+                            var delay = 3800;
                             var duration = 200;
                             $('.fade').each(function () {
                                 var $this = $(this);

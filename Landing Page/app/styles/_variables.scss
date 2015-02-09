@@ -1,14 +1,7 @@
 @font-face {
-    font-family: 'NeutraDisp-Medium';
-    src: url('fonts/NeutraDisp-Medium.eot');
-    src: local('☺'), url('fonts/NeutraDisp-Medium.woff') format('woff'), url('fonts/NeutraDisp-Medium.ttf') format('truetype'), url('fonts/NeutraDisp-Medium.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Gotham-Light';
-    src: url('fonts/Gotham-Light.eot');
-    src: local('☺'), url('fonts/Gotham-Light.woff') format('woff'), url('fonts/Gotham-Light.ttf') format('truetype'), url('fonts/Gotham-Light.svg') format('svg');
+    font-family: 'Copperplate';
+    src: url('fonts/Copperplate.eot');
+    src: local('☺'), url('fonts/Copperplate.woff') format('woff'), url('fonts/Copperplate.ttf') format('truetype'), url('fonts/Copperplate.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -37,6 +30,10 @@
 
 $pink-light: #FCF3F2;
 $pink-dark: #E0CFCE;
+$font: 'Copperplate';
+.font{
+    font-family: 'Copperplate', Arial;
+}
 
 
 @mixin logo-icon-effect($limit, $delay:0s, $effect:false, $speed:.05s, $i:1){
