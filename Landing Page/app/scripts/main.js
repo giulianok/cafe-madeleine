@@ -2,7 +2,7 @@ $(function () {
     'use strict';
     
     
-    var email = 'info{arroba}cafemadeleine.com'.replace('{arroba}', '@');
+    var email = 'info{arroba}cafemadeleinebahamar.com'.replace('{arroba}', '@');
     
 
     var Loading = {
@@ -31,7 +31,7 @@ $(function () {
                                 delay += duration;
                             });
                             
-                            Moving();
+                            //Moving();
 
                         }, 1000);
 
